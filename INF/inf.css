@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    line-height: 1.6;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://www.example.com/your-bloodstrike-image.jp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for intensity */
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: crimson;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.cta {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #b30000;
+}
+
+
+.cta-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #222;
+}
+
+.cta-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.cta-button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b30000;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 1.5rem;
+    color: #888;
+    font-size: 1rem;
+}

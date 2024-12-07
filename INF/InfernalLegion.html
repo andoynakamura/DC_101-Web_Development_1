@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infernal Legion</title>
+    <link rel="stylesheet" type="text/css" href="inf.css">
+    <script>
+        
+        let originalContent;
+
+       
+        function showMerchandise() {
+           
+            if (!originalContent) {
+                originalContent = document.body.innerHTML;
+            }
+
+          
+            document.body.innerHTML = `
+                <html>
+                    <head>
+                        <title>Infernal Legion's Merchandise</title>
+                    </head>
+                    <body>
+                        <center><h1>Infernal Legion's Merchandise</h1></center>
+                        <div style="text-align: center;">
+                            <img src="inf1.jpg" style="object-fit: contain; max-width: 100%; max-height: 80vh; opacity: 0.8;">
+                        </div>
+                        <!-- Back to Home Button -->
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button onclick="goBackHome()" class="cta">Back to Home</button>
+                        </div>
+                    </body>
+                </html>
+            `;
+        }
+
+       
+        function goBackHome() {
+            document.body.innerHTML = originalContent;
+        }
+    </script>
+</head>
+<body>
+  
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Infernal Legion</h1>
+            <p>Ready to fight. Be part of the Infernal Legion.</p>
+            <p>𝑾𝒉𝒆𝒓𝒆 𝒔𝒉𝒂𝒅𝒐𝒘𝒔 𝒎𝒆𝒆𝒕 𝒇𝒊𝒓𝒆, 𝒅𝒂𝒓𝒌𝒏𝒆𝒔𝒔 𝒓𝒆𝒊𝒈𝒏𝒔 𝒔𝒖𝒑𝒓𝒆𝒎𝒆.</p>
+            <!-- Button to load merchandise content -->
+            <button onclick="showMerchandise()" class="cta">Join the Legion</button>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Infernal Legion. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+    
+
+    
