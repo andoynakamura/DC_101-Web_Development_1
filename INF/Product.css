@@ -21,6 +21,44 @@ body {
   height: auto;
   border-radius: 10px;
 }
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #BF53FF;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  animation: none;
+}
+button:active + .notification {
+  visibility: visible;
+  animation: fadeInOut 1s forwards;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  10% {
+    opacity: 100;
+  }
+  90% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden; 
+  }
+}
+
 .container {
   width: 50%;
   margin: 50px auto;
